@@ -27,7 +27,7 @@ public class MethodsToAnalyze {
 	 * @param newValue new value
 	 */
 	public static void replaceAll(int[] array, int oldValue, int newValue) {
-		int index = find(array, oldValue);
+		int index = find(array, oldValue); // 1 + 2 + 3(n)
 		while (index > -1) {
 			array[index] = newValue;
 			index = find(array, oldValue);
